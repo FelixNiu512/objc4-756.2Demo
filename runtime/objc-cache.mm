@@ -856,7 +856,7 @@ void cache_collect(bool collectALot)
         }
     } 
     else {
-        // No excuses.
+        // No excuses.objc_msgSend
         while (_collecting_in_critical()) 
             ;
     }

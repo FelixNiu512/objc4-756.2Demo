@@ -133,8 +133,6 @@
 		C3ED047323AE3791004F9518 /* base_private.h in Headers */ = {isa = PBXBuildFile; fileRef = C3ED046723AE3791004F9518 /* base_private.h */; };
 		C3ED047B23AE3A05004F9518 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ED047A23AE3A05004F9518 /* main.m */; };
 		C3ED048123AE3A7E004F9518 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
-		C3ED048423AE3B70004F9518 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ED048323AE3B70004F9518 /* Job.m */; };
-		C3ED048723AE3C0E004F9518 /* Programmer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ED048623AE3C0E004F9518 /* Programmer.m */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		F9BCC71B205C68E800DD9AFC /* objc-blocktramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 8379996D13CBAF6F007C2B5F /* objc-blocktramps-arm64.s */; };
 /* End PBXBuildFile section */
@@ -282,10 +280,6 @@
 		C3ED046723AE3791004F9518 /* base_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base_private.h; sourceTree = "<group>"; };
 		C3ED047823AE3A05004F9518 /* CCTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CCTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3ED047A23AE3A05004F9518 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C3ED048223AE3B70004F9518 /* Job.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
-		C3ED048323AE3B70004F9518 /* Job.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
-		C3ED048523AE3C0E004F9518 /* Programmer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Programmer.h; sourceTree = "<group>"; };
-		C3ED048623AE3C0E004F9518 /* Programmer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Programmer.m; sourceTree = "<group>"; };
 		D2AAC0630554660B00DB518D /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-i386.s"; path = "runtime/objc-blocktramps-i386.s"; sourceTree = "<group>"; };
 		E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-x86_64.s"; path = "runtime/objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
@@ -562,10 +556,6 @@
 			isa = PBXGroup;
 			children = (
 				C3ED047A23AE3A05004F9518 /* main.m */,
-				C3ED048223AE3B70004F9518 /* Job.h */,
-				C3ED048323AE3B70004F9518 /* Job.m */,
-				C3ED048523AE3C0E004F9518 /* Programmer.h */,
-				C3ED048623AE3C0E004F9518 /* Programmer.m */,
 			);
 			path = CCTest;
 			sourceTree = "<group>";
@@ -809,9 +799,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3ED048723AE3C0E004F9518 /* Programmer.m in Sources */,
 				C3ED047B23AE3A05004F9518 /* main.m in Sources */,
-				C3ED048423AE3B70004F9518 /* Job.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

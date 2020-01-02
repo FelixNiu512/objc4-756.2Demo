@@ -12,12 +12,23 @@
 #endif
 
 #import <Foundation/Foundation.h>
-#import "Programmer.h"
+
+@interface Person : NSObject
+
+@end
+
+@implementation Person
+
+@end
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Job *job = [Job alloc];
-        CCNSLog(@"job: %@ -- %p", job, &job);
+        Person *p = [Person alloc];
+        Person *p1 = [p init];
+        Person *p2 = [p init];
+        CCNSLog(@"p ==> %@", p);
+        CCNSLog(@"p1 ==> %@", p1);
+        CCNSLog(@"p2 ==> %@", p2);
     }
     return 0;
 }
