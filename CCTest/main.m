@@ -12,12 +12,17 @@
 #endif
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
 @interface Person : NSObject
 
 @end
 
 @implementation Person
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    return [super allocWithZone:zone];
+}
 
 @end
 
