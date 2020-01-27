@@ -20,20 +20,22 @@
 
 @implementation Person
 
-+ (instancetype)allocWithZone:(struct _NSZone *)zone {
-    return [super allocWithZone:zone];
-}
+@end
+
+@interface Teacher : Person
+
+@end
+
+@implementation Teacher
 
 @end
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Person *p = [Person alloc];
-        Person *p1 = [p init];
-        Person *p2 = [p init];
-        CCNSLog(@"p ==> %@", p);
-        CCNSLog(@"p1 ==> %@", p1);
-        CCNSLog(@"p2 ==> %@", p2);
+        NSObject *object = [[NSObject alloc] init];
+        Person *person = [[Person alloc] init];
+        Teacher *teacher = [[Teacher alloc] init];
+        NSLog(@"%@ -- %@ -- %@", teacher, person, object);
     }
     return 0;
 }
