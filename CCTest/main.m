@@ -14,28 +14,40 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 
-@interface Person : NSObject
+@protocol PersonProtocol <NSObject>
+
+- (void)walk;
+
+@end
+
+@interface Person : NSObject <PersonProtocol> {
+    NSInteger _gender;
+}
+
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSInteger age;
+
+- (void)run;
 
 @end
 
 @implementation Person
 
-@end
+- (void)run {
+    NSLog(@"I am running.");
+}
 
-@interface Teacher : Person
-
-@end
-
-@implementation Teacher
+- (void)walk {
+    NSLog(@"I am walking.");
+}
 
 @end
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSObject *object = [[NSObject alloc] init];
-        Person *person = [[Person alloc] init];
-        Teacher *teacher = [[Teacher alloc] init];
-        NSLog(@"%@ -- %@ -- %@", teacher, person, object);
+        Person *p = [[Person alloc] init];
+        Class pcls = object_getClass(p);
+        
     }
     return 0;
 }
