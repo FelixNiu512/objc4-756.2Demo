@@ -118,9 +118,6 @@
 		83F550E0155E030800E95D3B /* objc-cache-old.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83F550DF155E030800E95D3B /* objc-cache-old.mm */; };
 		87BB4EA70EC39854005D08E1 /* objc-probes.d in Sources */ = {isa = PBXBuildFile; fileRef = 87BB4E900EC39633005D08E1 /* objc-probes.d */; };
 		9672F7EE14D5F488007CEC96 /* NSObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672F7ED14D5F488007CEC96 /* NSObject.mm */; };
-		C35CC7D324244EBD0090FAE6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C35CC7D224244EBD0090FAE6 /* Person.m */; };
-		C35CC7D624244F680090FAE6 /* NSObject+CC.m in Sources */ = {isa = PBXBuildFile; fileRef = C35CC7D524244F680090FAE6 /* NSObject+CC.m */; };
-		C35CC7E02425127D0090FAE6 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = C35CC7DF2425127D0090FAE6 /* Student.m */; };
 		C3E6F65724187ABD00E4B8C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E6F65624187ABD00E4B8C7 /* AppDelegate.m */; };
 		C3E6F65D24187ABD00E4B8C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E6F65C24187ABD00E4B8C7 /* ViewController.m */; };
 		C3E6F66024187ABD00E4B8C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6F65E24187ABD00E4B8C7 /* Main.storyboard */; };
@@ -294,12 +291,6 @@
 		87BB4E900EC39633005D08E1 /* objc-probes.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; name = "objc-probes.d"; path = "runtime/objc-probes.d"; sourceTree = "<group>"; };
 		9672F7ED14D5F488007CEC96 /* NSObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NSObject.mm; path = runtime/NSObject.mm; sourceTree = "<group>"; };
 		BC8B5D1212D3D48100C78A5B /* libauto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libauto.dylib; path = /usr/lib/libauto.dylib; sourceTree = "<absolute>"; };
-		C35CC7D124244EBD0090FAE6 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		C35CC7D224244EBD0090FAE6 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		C35CC7D424244F680090FAE6 /* NSObject+CC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CC.h"; sourceTree = "<group>"; };
-		C35CC7D524244F680090FAE6 /* NSObject+CC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CC.m"; sourceTree = "<group>"; };
-		C35CC7DE2425127D0090FAE6 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		C35CC7DF2425127D0090FAE6 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		C39CC1A923C724CD00DD1861 /* CCTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CCTest.entitlements; sourceTree = "<group>"; };
 		C3E6F65324187ABD00E4B8C7 /* CCAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E6F65524187ABD00E4B8C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -629,12 +620,6 @@
 			children = (
 				C39CC1A923C724CD00DD1861 /* CCTest.entitlements */,
 				C3ED047A23AE3A05004F9518 /* main.m */,
-				C35CC7D124244EBD0090FAE6 /* Person.h */,
-				C35CC7D224244EBD0090FAE6 /* Person.m */,
-				C35CC7DE2425127D0090FAE6 /* Student.h */,
-				C35CC7DF2425127D0090FAE6 /* Student.m */,
-				C35CC7D424244F680090FAE6 /* NSObject+CC.h */,
-				C35CC7D524244F680090FAE6 /* NSObject+CC.m */,
 			);
 			path = CCTest;
 			sourceTree = "<group>";
@@ -801,7 +786,6 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = NO;
 				LastUpgradeCheck = 0440;
 				TargetAttributes = {
 					834F9B01212E560100F95A54 = {
@@ -927,10 +911,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C35CC7D324244EBD0090FAE6 /* Person.m in Sources */,
-				C35CC7D624244F680090FAE6 /* NSObject+CC.m in Sources */,
 				C3ED047B23AE3A05004F9518 /* main.m in Sources */,
-				C35CC7E02425127D0090FAE6 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
